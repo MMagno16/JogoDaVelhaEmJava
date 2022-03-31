@@ -12,10 +12,8 @@ public class Console {
 	
 	public static int lerJogada(){
 		Scanner in = new Scanner(System.in);
-		int num;
-
 		try {
-			return num = in.nextInt();
+			return in.nextInt();
 		} catch (Exception e) {
 			System.out.println("caracter invalido");
 		}
