@@ -4,16 +4,19 @@ import java.util.Scanner;
 
 public class Console {
 	
+	private static Scanner in;
+	private static Scanner in2;
+
 	public static String entraNome(){
-		Scanner in = new Scanner(System.in);
+		in = new Scanner(System.in);
 		String nome = in.nextLine();
 		return nome;
 	}
 	
 	public static int lerJogada(){
-		Scanner in = new Scanner(System.in);
+		in2 = new Scanner(System.in);
 		try {
-			return in.nextInt();
+			return in2.nextInt();
 		} catch (Exception e) {
 			System.out.println("caracter invalido");
 		}
